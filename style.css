@@ -1,0 +1,28 @@
+*{
+padding : 0;
+margin : 0;
+}
+
+/* ---- Espace commentaires 1 */
+
+.comments-one {
+    display : grid;
+    grid-template-columns : 200px;
+    grid-template-rows: 200px 200px;
+}
+
+/* ---- Espace commentaires 2 */
+
+
+
+/* ---- Image endroits pas recommandés */
+
+
+
+
+/*.current-trend{
+    display : grid;
+    grid-template-columns : 1fr 2fr;
+    grid-template-rows : 1fr 1fr;
+    gap : 1.5em;
+}*/
