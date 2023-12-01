@@ -4,6 +4,10 @@
     padding: 0;
     margin: 0;
  }
+
+ body{
+   font-family: 'Sansita', sans-serif;
+ }
  
  .backgroundImage {
     max-width: 100%;
@@ -11,6 +15,7 @@
     display: flex;
     justify-content: center;
     background-size: cover;
+    filter: opacity(80%);
 }
 
 
@@ -18,8 +23,13 @@
     max-width: 100%; 
     text-align: center;
     padding: 2em; 
-    margin-top: -10rem; 
+    margin-top: -13rem; 
     display: flex; 
-    color: crimson; 
-    
+    color: #fdfcf5; 
+    filter: opacity(100%);
+    text-shadow: 
+     1px 1px 0 #000,  
+     -1px 1px 0 #000,    
+      -1px -1px 0 #000,    
+       1px -1px 0 #000;
  } 
