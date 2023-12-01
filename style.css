@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+ *{
+    max-width: 375px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+ body{
+   font-family: 'Sansita', sans-serif;
+ }
+ 
+ .backgroundImage {
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    filter: opacity(80%);
+}
+
+
+ .title { 
+    max-width: 100%; 
+    text-align: center;
+    padding: 2em; 
+    margin-top: -13rem; 
+    display: flex; 
+    color: #fdfcf5; 
+    filter: opacity(100%);
+    text-shadow: 
+     1px 1px 0 #000,  
+     -1px 1px 0 #000,    
+      -1px -1px 0 #000,    
+       1px -1px 0 #000;
+ } 
+=======
 #map { height: 356px; }
 
 /* body{
@@ -178,3 +215,4 @@ a {
     justify-content: center;
 }
 
+>>>>>>> main
