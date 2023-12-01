@@ -3,26 +3,147 @@ padding : 0;
 margin : 0;
 }
 
-/* ---- Espace commentaires 1 */
-
-.comments-one {
-    display : grid;
-    grid-template-columns : 200px;
-    grid-template-rows: 200px 200px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---- Espace commentaires 2 */
+.places-not-recommended {
+    flex-grow: column wrap;
+    padding: 20px;
+  }
+
+  .details-picture {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .image-container ul {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    list-style: none;
+
+  }
+
+  .room-with-a-sink {
+    width: 50%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 15px; 
+  }
+
+/* ---- Espace commentaires 1 et 2 */
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .comments-container {
+    flex-grow: column wrap;
+    padding: 20px;
+    margin-top: 15%;
+  }
+
+  .comments-container h4 {
+    color: #F59E0B;
+    margin-bottom: 20px;
+  }
+  
+  .coomment-one {
+    border-top: 1px solid #ccc;
+  }
+
+  .comments-one,
+  .comments-two {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+
+  /*  .button {
+    float: right;
+  }*/
+  
+  .comments-one p, .comments-two p {
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+  .comments-two {
+    border-top: 1px solid #ccc;
+  }
+  
+  .profile-picture-1,
+  .profile-picture-2 {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .comment-content {
+    flex-grow: 1;
+  }
+  
+  .reply-button {
+    float: right;
+  }
+  
 
 
 
-/* ---- Image endroits pas recommandés */
 
 
 
 
-/*.current-trend{
-    display : grid;
-    grid-template-columns : 1fr 2fr;
-    grid-template-rows : 1fr 1fr;
-    gap : 1.5em;
-}*/
+
+#map { height: 300px; }
+
+main{
+    width: 100%;
+}
+
+
+.mapExempleHouse{
+    display: flex;
+    width: 100%;
+
+}
+
+
+.displayMap{
+    width: 50%;
+}
+
+.exempleHouse{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    width: 33%;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+
+.displayMap{
+    width: 66%;
+    border-radius: 20px;
+    margin-left: 1%;
+    background-color: #F2F2F2;
+}
+
+/* redimmensionner les <a> dans .exempleHouse */
