@@ -1,4 +1,64 @@
-<<<<<<< HEAD
+.Foot {
+    padding: auto;
+    background-color: azure;
+    color: black;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+    border: 3em; 
+    margin-bottom: 20px;
+    width: auto;
+    padding: 15px;
+}
+
+
+.foot-description {
+    font-size: 0.5em;
+}
+.logos-social {
+    display: flex;
+    justify-content: space-around;
+    width: 2em;
+    height: 2em;
+    margin-left: 4em;
+}
+.logo-facebook {
+    padding: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+.logo-twiter {
+    padding: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+.logo-insta {
+    padding: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+.foot-lien {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0em; 
+}
+.Continents {
+   border: 1px;
+   margin-bottom: 20px;
+   text-align: left;
+}
+
+.Article {
+    text-align: left;
+}
+
+.Contact {
+    text-align: left;
+}
+
  *{
     max-width: 375px;
     box-sizing: border-box;
@@ -34,7 +94,6 @@
       -1px -1px 0 #000,    
        1px -1px 0 #000;
  } 
-=======
 #map { height: 356px; }
 
 /* body{
@@ -213,5 +272,3 @@ a {
     display: flex;
     justify-content: center;
 }
-
->>>>>>> main
