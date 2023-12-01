@@ -1,3 +1,427 @@
+:root {
+    --first-color:#fdfcf5;
+    --second-color:#8FDEE1;
+    --third-color: #DBD8FC;
+    --fourthcolor: black;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    max-width: 375px;
+}
+
+body {
+ color: black;
+ font-family: 'Sansita', sans-serif;
+ background-color: var(--first-color);
+}
+
+                                            /*/ NAVBAR /*/
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bcb791;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+
+.nav-links ul {
+    display: flex;
+}
+
+.nav-links ul li a {
+    color: black;
+    padding: 0.5em 1em 0.5em 1em;
+    display: block;
+}
+
+.nav-links ul li:hover {
+    background-color: var(--second-color);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.5em;
+    right: 0.5em;
+    margin-right: 1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo {
+    width: 3em;
+    height: 4m;
+    padding: 0;
+    margin-right: 12.5em;
+    margin-top: 0;
+}
+
+.Sign {
+    align-items: center;
+    margin-top: 0.7em;
+    color: var(--fourthcolor);
+    text-decoration: none;
+}
+
+
+@media (max-width: 376px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 0.75em;
+    }
+
+    .nav-links li a:hover {
+        background-color: var( --second-color);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+                                    /* User */
+
+
+.description {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.description-titre {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+
+.description-texte {
+    font-size: 1.1em;
+}
+
+.logs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 4em;
+}
+
+.login {
+    font-size: 1.2em;
+    width: 66vw;
+    height: 6vh;
+    border-radius: 30px;
+    background-color: var(--second-color);
+    /* margin-bottom: 0.5em; */
+    border: 0px;
+    box-shadow: 0px 3px gray;
+}
+
+.login:hover {
+    font-size: 1.5em;
+}
+
+.createlog {
+    font-size: 1.2em;
+    width: 66vw;
+    height: 6vh;
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 0px 3px gray;
+    margin-top: 16px;
+}
+
+.createlog:hover {
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+                                                /* Connexion */
+
+
+
+.return {
+    display: flex;
+    align-items: center;
+    padding-left: 3.5em;
+}
+
+
+
+
+.connexion-titre {
+    display: flex;
+    font-size: 2em;
+    padding-top: 0.3em;
+    padding-left: 0.5em;
+}
+
+
+
+.comptes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+
+.google-co{
+    display: flex;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3em;
+    width: 45vw;
+    height: 8vh;
+    border-radius: 40px;
+    background-color: white;
+    border: 0px;
+    box-shadow: 0px 3px gray;
+}
+
+.google:hover {
+    font-size: 1.5em;
+}
+
+
+.google-logo {
+    width: 2em;
+    height: 2em;
+
+}
+
+
+
+.facebook {
+    font-size: 1.3em;
+    width: 45vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    background-color: #3498DB;
+    color: white;
+    border: 0px;
+    box-shadow: 0px 3px gray;
+}
+
+.facebook:hover {
+    font-size: 1.5em;
+}
+
+.facebook-logo {
+   width: 2em;
+   height: 2em;
+
+}
+
+
+.interligne {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+
+.connexion {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
+.email{
+    font-size: 1.5em;
+}
+
+.email-text {
+    width: 75vw;
+    height: 7vh;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    border: 0px;
+    box-shadow: 0px 3px gray;
+}
+
+.mot-de-passe{
+    font-size: 1.5em;
+}
+
+.mot-de-passe-text {
+    width: 75vw;
+    height: 7vh;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 1em;
+    border: 0px;
+    box-shadow: 0px 3px gray;
+}
+
+
+.forgotpassword{
+    display: flex;
+    justify-content: end;
+    font-size: 0.8em;
+}
+
+.connecter {
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: var(--second-color);
+    width: 50vw;
+    height: 7vh;
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 0px 3px gray;
+}
+
+.connecter:hover {
+    font-size: 1.5em;
+}
+
+
+.connexion-footer {
+    font-size: O.8em;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5em;
+}
+
+.connexion-footer a {
+    color: var(--second-color);
+}
+
+
+
+                                        /* Sign */
+
+                                        
+.sub-title {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 1em 0em 1em;
+}         
+
+.sub-formulaire {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.sub-email {
+    padding: 1em;
+}
+
+.sub-mail {
+    font-size: 1.5em;
+}
+
+.sub-password {
+    padding: 1em;
+}
+
+.sub-pass {
+    font-size: 1.5em;
+}
+
+.sub-second-password {
+    padding: 1em;
+}
+
+.sub-second-pass {
+    font-size: 1.5em;
+}
+
+
+.sub-text {
+    font-size: 1em;
+    text-align: center;
+    width: 80vw;
+    height: 5.5vh;
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 0px 3px gray;;
+    margin-top: 0.5em;
+}
+
+.sub-button {
+    font-size: 1.4em;
+    width: 60vw;
+    height: 7vh;
+    margin-top: 1em;
+    box-shadow: 0px 3px gray;
+    border: 0px;
+    border-radius: 30px;
+    background-color: var(--second-color);
+}
+
+.sub-button:hover {
+    font-size: 1.6em;
+}
 .Foot {
     padding: auto;
     background-color: azure;
