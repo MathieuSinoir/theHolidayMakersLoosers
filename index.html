@@ -15,6 +15,28 @@
 </head>
 <body>
 
+    <!-- Section pop-up-->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close-btn" onclick="closePopup()">X</span>
+            <h2>Créer un compte pour partager vos vacances nulles !</h2>
+    
+            <form action="#" method="post" onsubmit="submitForm()">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="story">Votre premier post :</label>
+                <textarea id="story" name="story" rows="4" required></textarea>
+    
+                <input type="submit" value="Partager" id="btn-share" required>
+            </form>
+        </div>
+    </div>
+    
+
     <header class="header">
         <nav class="nav">
             <div class="test">
