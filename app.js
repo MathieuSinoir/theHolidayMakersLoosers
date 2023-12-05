@@ -22,7 +22,7 @@ toggleButton.addEventListener('click', () => {
 
 let map = L.map('map').setView([51.505, -0.09], 9);
 
-let Stadia_OSMBright = L.tileLayer(
+let stadia_OSMBright = L.tileLayer(
   'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
   {
     maxZoom: 20,
@@ -31,6 +31,6 @@ let Stadia_OSMBright = L.tileLayer(
   }
 );
 
-Stadia_OSMBright.addTo(map);
+stadia_OSMBright.addTo(map);
 
 // Java pour articles en slide //

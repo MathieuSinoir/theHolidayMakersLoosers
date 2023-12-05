@@ -37,7 +37,7 @@ body {
 }
 
 .nav-links ul li a {
-  color: black;
+  color: var(--fourth-color);
   padding: 0.5em 1em 0.5em 1em;
   display: block;
 }
@@ -703,7 +703,7 @@ body {
   border-radius: 20px;
 }
 
-/* Section Axelle */
+                                                        /* Section Axelle */
 
 /* .container {
     display: flex;
@@ -780,13 +780,13 @@ body {
   width: 100%;
 }
 
-/* .comments-one,
+.comments-one,
 .comments-two {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     width: 50%;
-} */
+}
 
 .button {
   float: right;
@@ -842,7 +842,7 @@ body {
   margin-bottom: 0.5em;
 }
 
-/* section Slavica */
+                                                  /* section Slavica */
 
 .foot {
   /* padding: auto; */
