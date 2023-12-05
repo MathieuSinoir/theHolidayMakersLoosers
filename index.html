@@ -3,245 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" >   
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
     <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
     <script src="style.css"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
-    <title>theHolidayMakersLoosers</title>
+    <title>The Holidaymakers Loosers</title>
 </head>
 <body>
 
-    <!-- barre de navigation menu burger logo sing up -->
-    <section class="navigation">
-        <nav>
+    <!-- Section pop-up-->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close-btn" onclick="closePopup()">X</span>
+            <h2>Créer un compte pour partager vos vacances nulles !</h2>
+    
+            <form action="#" method="post" onsubmit="submitForm()">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="story">Votre premier post :</label>
+                <textarea id="story" name="story" rows="4" required></textarea>
+    
+                <input type="submit" value="Partager" id="btn-share" required>
+            </form>
+        </div>
+    </div>
+    
 
+    <header class="header">
+        <nav class="nav">
+            <div class="test">
+                <img class="Logo" src="https://www.shutterstock.com/shutterstock/photos/2201936735/display_1500/stock-vector-beach-logo-design-vector-illustration-2201936735.jpg" alt="">
+                <a href="user.html"><img class="Sign" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO3UQUrDQBSH8R8umqVdWrrWK+hJxEPYHsNuRPFAurR1ZfEAuinVlUUUXVYGJiCCdNJObCn54A8heeGbl8wbGjaUAn2M8BETrnvxWS10Mcb8j9zHmqwUC6Q/5Vk77ydIy5zmFN9VEA9zit8riENtNuYVs5aO37biH/fWtauLOKMpc9ySme4CeS0nV0krfsph3HAht/Fe9k4b/pUdHGGAGzzjK2aKa5zhMNauTAcXeKkwx2FR59hbRtjGFT6XOKfLhHcvsZsqPcDTCsLfecR+ivgho7TMOEU8rUE8SRGfYJZR+orjFHHDdvENyZP0ibBvoI8AAAAASUVORK5CYII="></a>
+            </div>
+            
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a class="button" href="#tendances">Tendances</a></li>
+                    <li><a class="button" href="#commentaires">Commentaires</a></li>
+                </ul>
+            </div>
         </nav>
-    </section>
-
-</header>
-
-
-
-<main>
-
-    <section class="imageTitle">
-
-
-    <!-- titre principal -->
-
-        <section>
-            <img class="backgroundImage"src="/assets/maxresdefault-2-1.png" alt="piscine salle">
-        </section>
-        <h1 class="title">The Holiday Makers Loosers </h1>
-
-
-    </section>  
-
-</head>
-<body onload=>
-    <header>
-        <!-- barre de navigation menu burger logo sing up -->
-        <section class="navigation">
-            <nav>
-
-            </nav>
-        </section>
-
     </header>
 
 
-    <main>
-
-        <section class="imageTitle">
+                                            <!-- Section Damien -->
 
 
-        <!-- titre principal -->
-        <h1></h1>
+<main>
+    <section>
+        <div>
+            <img class="backgroundImage"src="/assets/maxresdefault-2-1.png" alt="piscine salle">
+        </div>
+        <h1 class="title">The Holiday Makers Loosers </h1>
+    </section>  
+</main>
 
-            <section class="backgroundImage">
-                <!-- mettre le lien de l image ici -->
-                <img class="background" src="">
-            </section>
+
+                                            <!-- Section Mathieu -->
 
 
-
-        </section>
+<main class="main">
+<body onload=>
 
         <section class="interactiveMap">
-
             <section class="map">
-
                 <div id="map"></div>
+                    <section class="pirLogementMap">
+                    <!-- ajouter tiret sur le cote gauche du H2 -->
+                    <!-- <h3 class="titreMap">Maps</h3> -->
+                        <section class="mapExempleHouse">
+                            <section class="exempleHouse">
+                                <section class="hostingPopular">
+                                    <div class="imageChambre">
+                                        <img class= "imageChambre1" src="image/chambre.jpg" alt="Pire_chambre">
+                                    </div>
+                                    <div class="hostingPopularContent">
+                                        <h3>Blbalvla</h3>
+                                        <p>"c'est sale il n'y a pas de toilette ni de douches c'est top!"</p> 
+                                     </div>
+                                </section>
+
+                                <section class="hostingPopular2">
+                                    <div class="imageChambre">
+                                        <img class= "imageChambre2" src="image/chambre.jpg" alt="Pire_chambre">
+                                    </div>
+                                    <div class="hostingPopularContent2">
+                                        <h3>Blbalvla</h3>
+                                        <p>"je veux pas rentrer il y a pas de jeux et on se fait chier"</p>
+                                    </div>
+                                </section>
 
 
-        <section class="pirLogementMap">
-            <!-- ajouter tiret sur le cote gauche du H2 -->
-            <h3 class="titreMap">Maps</h3>
+                                <section class="hostingPopular3">
+                                    <div class="imageChambre">
+                                        <img class= "imageChambre3" src="image/chambre.jpg" alt="Pire_chambre">
+                                    </div>
+                                    <div class="hostingPopularContent3">
+                                        <h3>Blbalvla</h3>
+                                        <p>"Youhou! il n'y a pas de piscine dans l'hôtel c'est super"</p>                            
+                                    </div>
+                                </section>
+                            </section>
 
 
-            <section class="mapExempleHouse">
+                            <section class="displayMap">
+                                <!-- <div id="map"></div> -->
+                            </section>
 
-                
+                        </section>
 
-                <section class="exempleHouse">
+                        <section class="searchBar" >
 
-                    <a class="hostingPopular">
-                        <div class="imageChambre">
-                            <img class= "imageChambre1" src="image/chambre.jpg" alt="Pire_chambre">
-                        </div>
-                        <div class="hostingPopularContent">
-                            <h3>Blbalvla</h3>
-                            <p>"Blablablablaaaa"</p>
-                            
-                        </div>
+                        </section>
 
-                    </a>
+                                <!-- mettre un systeme de commentaire comment faire ?? -->
 
-                    <a class="hostingPopular2">
-                        <div class="imageChambre">
-                            <img class= "imageChambre2" src="image/chambre.jpg" alt="Pire_chambre">
-                        </div>
-                        <div class="hostingPopularContent2">
-                            <h3>Blbalvla</h3>
-                            <p>"Blablablablaaaa"</p>
-                            
-                        </div>
+                        <section>
 
-                    </a>
+                        </section>
 
-
-                    <a class="hostingPopular3">
-                        <div class="imageChambre">
-                            <img class= "imageChambre3" src="image/chambre.jpg" alt="Pire_chambre">
-                        </div>
-                        <div class="hostingPopularContent3">
-                            <h3>Blbalvla</h3>
-                            <p>"Blablablablaaaa"</p>
-                            
-                        </div>
-
-                    </a>
-                </section>
-                <section class="displayMap">
-                    <div id="map"></div>
-                </section>
-
+                    </section>
             </section>
-
-            <section class="searchBar" >
-
-            </section>
-
-            <!-- mettre un systeme de commentaire comment faire ?? -->
-
-            <section>
-
-            </section>
-
         </section>
-
-        <section class="currentTrend">
-
-            <section class="trend">
-                
-
-            </section>
-
-
-        </section>
-
-
     </main>
 
 
+                                            <!-- Section Axelle -->
 
-    <footer>
-        <section class="Logo-Footer">
-        <h1>Logo</h1>
-        <div>
-            <p class="foot-description">
-            Entreprise fondée en 2023 par les Wilders dans le but d'aider aux voyageurs <br> de trouver les pires destinations de voyage et passer des vacances horribles.</div>
-        </p>
-            <div class="logos-social">
-               <a ><svg  class="logo-facebook" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
-                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"></path>
-            </svg></a>
-                <a ><svg class="logo-twiter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-                    <path d="M 24 4.300781 C 23.101563 4.699219 22.199219 5 21.199219 5.101563 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601563 C 19.300781 2.601563 18 2 16.601563 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101563 5.898438 1.699219 2.898438 C 1.199219 3.601563 1 4.5 1 5.398438 C 1 7.101563 1.898438 8.601563 3.199219 9.5 C 2.398438 9.398438 1.601563 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101563 14 3.601563 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101563 17.300781 7.300781 17.300781 C 5.601563 18.601563 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601563 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101563 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781"></path>
-                    </svg></a>
-                <a ><svg class="logo-insta" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
-                    <path d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"></path>
-                    </svg></a>
-                    <a href=""></a>        
+            
+
+    <section class="current-trend">
+        <div class="container">
+            <div class="places-not-recommended" id="tendances">
+                <h3>❌ Les endroits pas recommandés du tout (aux dernières nouvelles...)</h3>
+
+                <p> Découvrez notre merveilleuse chambre d'hôtel, vue sur mur. Cette chambre, 
+                aux allures charmantes, contient tout l'essentiel pour passer des vacances horribles. 
+                <br>Un lit, une télévision, un cadre de décoration et le tour est joué. Et si une envie 
+                pressante se fait sentir : le lavabo est à portée de main !</p>
             </div>
+        </div>
+        <section class="details-picture">
+            <div class="image-container">
+                <img class="room-with-a-sink" src="https://media-cdn.tripadvisor.com/media/photo-s/02/29/d9/9c/my-room-cold-old-and.jpg" alt="Une chambre avec un lavabo" >
+                    <ul>
+                        <h4>Détails de la chambre</h4><br>
+                        <li>1 lit</li>
+                        <li>1 télé</li>
+                        <li>1 lavabo</li>
+                        <li>2ème étage</li>
+                    </ul>
+            </div>
+        </section>
+    
+    <section>
+        <div class="comments-container" id="commentaires">
+            <h4>Commentaires</h4>
+            <!-- <div class="button">
+                    <button>
+                      <span class="button-tout-voir">Tout voir</span>
+                    </button>
+                -->
+                <section class="comments">
+                    <article class="comments-one">
+                        <img class="profile-picture-1" src="data:image/jpeg;base64,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" alt="Photo de profil 1"/>
+                        <div class="comment-content1">
+                            <h5>Titeuf</h5>
+                            <p>Cette chambre était parfaite pour des vacances catastrophiques ! Je recommande à tout le monde !!!</p>
+                            <button class="reply-button">Répondre</button>
+                        </div>
+                    </article>
+                    <article class="comments-two">
+                        <img class="profile-picture-2" src="data:image/jpeg;base64,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" alt="Photo de profil 2"/>
+                        <div class="comment-content2">
+                            <h5>Jean-Claude</h5>
+                            <p>V'ai été un peu défu quand ve fuis arrivé. Ve pensais ne pas avoir d'eau dans ma fhambre et en fait un lavabo était prévent... Ve ferai pluf attenfion la profhaine fois !</p>
+                            <button class="reply-button">Répondre</button>
+                        </div>
+                    </article>
+                </section>
+                <!-- </div> -->
+        </div>
+
+
+              <!--<img 
+                class="room-with-sink"
+                src="assets/room-with-sink.jpg"
+                alt="Une chambre d'hôtel avec un lavabo"/>-->
+
+
+    </section>
+
+
+                                                <!-- Section Slavica -->
+
+
+    <footer class="foot">
+        <section class="logo-footer">
+            <h1>Logo</h1>
+            <div>
+                <p class="foot-description">Entreprise fondée en 2023 par les Wilders dans le but d'aider les voyageurs à trouver les pires destinations de voyage et passer des vacances horribles.</p>
+            </div>
+                <div class="logos-social">
+                    <a><svg  class="logo-facebook" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                        <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"></path>
+                        </svg></a>
+
+                    <a><svg class="logo-twiter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                        <path d="M 24 4.300781 C 23.101563 4.699219 22.199219 5 21.199219 5.101563 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601563 C 19.300781 2.601563 18 2 16.601563 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101563 5.898438 1.699219 2.898438 C 1.199219 3.601563 1 4.5 1 5.398438 C 1 7.101563 1.898438 8.601563 3.199219 9.5 C 2.398438 9.398438 1.601563 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101563 14 3.601563 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101563 17.300781 7.300781 17.300781 C 5.601563 18.601563 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601563 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101563 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781"></path>
+                        </svg></a>
+
+                    <a><svg class="logo-insta" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
+                        <path d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"></path>
+                        </svg></a>        
+                </div>
         </section>
         
         <section class="foot-lien">
         
-        <section class="Continents">
-        <h1>Continents</h1>
-        <div>
-            <a href= "#">Afrique</a>
-        </div>
-        <div>
-            <a href="#">Europe</a>
-        </div>
-        <div>
-            <a href="#">Asie</a>
-        </div>
-        <div>
-            <a href="#">Amérique Du Nord</a>
-        </div>
-        <div>
-            <a href="#">Amérique Du Sud</a>
-        </div>
-        <div>
-            <a href="#">Océanie</a>
-        </div>
+            <section class="Continents">
+                <h1>Continents</h1>
 
+                <div><a href= "#">Afrique</a></div>
+
+                <div><a href="#">Europe</a></div>
+
+                <div><a href="#">Asie</a></div>
+        
+                <div><a href="#">Amérique Du Nord</a></div>
+        
+                <div><a href="#">Amérique Du Sud</a></div>
+        
+                <div><a href="#">Océanie</a></div>
+
+
+            </section>
+
+
+            <section class="Article">
+                <h1>Article</h1>  
+
+                <div><a href="#">Nouvel Article</a></div>
+        
+                <div><a href="#">Articles Populaires</a></div>
+        
+                <div><a href="#">Les Plus Lus</a></div>
+        
+                <div><a href="#">Actuces Et Conseils</a></div>
+            </section>
+
+
+            <section class="Contact">
+                <h1>Contact</h1>
+                
+                <div><a href="#">Adresse</a></div>
+
+                <div><a href="#">Téléphone</a></div>
+        
+                <div><a href="#">E-mail</a></div>
+
+            </section>
         </section>
 
 
-        <section class="Article">
-        <h1>Article</h1>  
-        <div>
-            <a href="#">Nouvel Article</a>
-        </div>
-        <div>
-            <a href="#">Articles Populaires</a>
-        </div>
-        <div>
-            <a href="#">Les Plus Lus</a>
-        </div>
-        <div>
-            <a href="#">Actuces Et Conseils</a>
-        </div>
-        </section>
 
-
-        <section class="Contact">
-        <h1>Contact</h1>
-        <div>
-            <a href="#">Adresse</a>
-        </div>
-
-        <div>
-            <a href="#">Téléphone</a>
-         </div>
-        <div>
-            <a href="#">E-mail</a>
-        </div>
-
-        </section>
-        </section>
-
-         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
         <script src="./app.js"></script>

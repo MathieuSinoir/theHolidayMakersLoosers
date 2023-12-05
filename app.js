@@ -1,3 +1,42 @@
+// POP UP //
+
+window.onload = function () {
+  document.getElementById('overlay').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+}
+
+
+
+
+const toggleButton = document.querySelector('.toggle-button')
+const navLinks = document.querySelector('.nav-links')
+const navButton = document.querySelectorAll('.button')
+
+// ca fonctionne
+toggleButton.addEventListener('click', () => {
+    toggleButton.classList.toggle('active')
+    navLinks.classList.toggle('active')
+    navButton.classList.toggle('active')
+})  
+
+// a tester 
+// toggleButton.addEventListener('click', () => {
+//     navLinks.classList.toggle("close")
+// })
+
+
+// a tester
+// navButton.addEventListener('click', () => {
+//     navButton.classList.remove("active")
+//     toggleButton.classList.remove("active")
+// })
+
+
+
+
 let map = L.map('map').setView([51.505, -0.09], 9);
 
 let Stadia_OSMBright = L.tileLayer(
@@ -11,3 +50,6 @@ let Stadia_OSMBright = L.tileLayer(
 
 
   Stadia_OSMBright.addTo(map);
+
+
+
