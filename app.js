@@ -1,3 +1,16 @@
+// POP UP //
+
+window.onload = function () {
+  document.getElementById('overlay').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+}
+
+
+
+
 const toggleButton = document.querySelector('.toggle-button')
 const navLinks = document.querySelector('.nav-links')
 const navButton = document.querySelectorAll('.button')
@@ -37,3 +50,6 @@ let Stadia_OSMBright = L.tileLayer(
 
 
   Stadia_OSMBright.addTo(map);
+
+
+
