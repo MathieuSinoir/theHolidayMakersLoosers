@@ -11,9 +11,31 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
-    <title>theHolidayMakersLoosers</title>
+    <title>The Holidaymakers Loosers</title>
 </head>
 <body>
+
+    <!-- Section pop-up-->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close-btn" onclick="closePopup()">X</span>
+            <h2>Créer un compte pour partager vos vacances nulles !</h2>
+    
+            <form action="#" method="post" onsubmit="submitForm()">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="story">Votre premier post :</label>
+                <textarea id="story" name="story" rows="4" required></textarea>
+    
+                <input type="submit" value="Partager" id="btn-share" required>
+            </form>
+        </div>
+    </div>
+    
 
     <header class="header">
         <nav class="nav">
@@ -38,7 +60,11 @@
     </header>
 
 
+
                                             <!-- Section Damien -->
+
+
+
 
 
 <main>
@@ -51,11 +77,12 @@
 </main>
 
 
+
                                             <!-- Section Mathieu -->
 
 
-    <main class="main">
-    <body onload=>
+<main class="main">
+<body onload=>
 
         <section class="interactiveMap">
             <section class="map">
@@ -65,6 +92,7 @@
                     <!-- <h3 class="titreMap">Maps</h3> -->
                         <section class="mapExempleHouse">
                             <section class="exempleHouse">
+
 
 
                                 <section class="caroussel">
@@ -162,6 +190,19 @@
 
 
                                 <!-- <section class="hostingPopular2">
+
+                                <section class="hostingPopular">
+                                    <div class="imageChambre">
+                                        <img class= "imageChambre1" src="image/chambre.jpg" alt="Pire_chambre">
+                                    </div>
+                                    <div class="hostingPopularContent">
+                                        <h3>Blbalvla</h3>
+                                        <p>"c'est sale il n'y a pas de toilette ni de douches c'est top!"</p> 
+                                     </div>
+                                </section>
+
+                                <section class="hostingPopular2">
+
                                     <div class="imageChambre">
                                         <img class= "imageChambre2" src="image/chambre.jpg" alt="Pire_chambre">
                                     </div>
@@ -169,10 +210,17 @@
                                         <h3>Blbalvla</h3>
                                         <p>"je veux pas rentrer il y a pas de jeux et on se fait chier"</p>
                                     </div>
+
                                 </section> -->
 
 
                                 <!-- <section class="hostingPopular3">
+
+                                </section>
+
+
+                                <section class="hostingPopular3">
+
                                     <div class="imageChambre">
                                         <img class= "imageChambre3" src="image/chambre.jpg" alt="Pire_chambre">
                                     </div>
@@ -180,6 +228,7 @@
                                         <h3>Blbalvla</h3>
                                         <p>"Youhou! il n'y a pas de piscine dans l'hôtel c'est super"</p>                            
                                     </div>
+
                                 </section> -->
                             </section>
 
@@ -217,6 +266,44 @@
                 <p> Découvrez notre merveilleuse chambre d'hôtel, vue sur mur. Cette chambre, 
                 aux allures charmantes, contient tout l'essentiel pour passer des vacances horribles. 
                 Un lit, une télévision, un cadre de décoration et le tour est joué. Et si une envie 
+
+                                </section>
+                            </section>
+
+
+                            <section class="displayMap">
+                                <!-- <div id="map"></div> -->
+                            </section>
+
+                        </section>
+
+                        <section class="searchBar" >
+
+                        </section>
+
+                                <!-- mettre un systeme de commentaire comment faire ?? -->
+
+                        <section>
+
+                        </section>
+
+                    </section>
+            </section>
+        </section>
+    </main>
+
+
+                                            <!-- Section Axelle -->
+
+
+    <section class="current-trend">
+        <div class="container">
+            <div class="places-not-recommended" id="tendances">
+                <h3>❌ Les endroits pas recommandés du tout (aux dernières nouvelles...)</h3>
+
+                <p> Découvrez notre merveilleuse chambre d'hôtel, vue sur mur. Cette chambre, 
+                aux allures charmantes, contient tout l'essentiel pour passer des vacances horribles. 
+                <br>Un lit, une télévision, un cadre de décoration et le tour est joué. Et si une envie 
                 pressante se fait sentir : le lavabo est à portée de main !</p>
             </div>
         </div>
@@ -341,6 +428,9 @@
 
             </section>
         </section>
+
+
+
 
 
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
