@@ -1,63 +1,55 @@
-let map = L.map('map').setView([51.505, -0.09], 1);
+let map = L.map('map').setView([51.505, -0.09], 2);
 
 let Stadia_OSMBright = L.tileLayer(
-    "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png",
-    {
-      maxZoom: 20,
-      attribution:
-        '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
-    }
-  );
+  'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
+  {
+    maxZoom: 20,
+    attribution:
+      '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+  }
+);
 
+Stadia_OSMBright.addTo(map);
 
-  Stadia_OSMBright.addTo(map);
+let uk = L.marker([51.5, -0.09]).addTo(map);
+uk.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
 
-  let london = L.marker([51.5, -0.09]).addTo(map);
-  london.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
+let france = L.marker([48.866667, 2.333333]).addTo(map);
+france.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
 
-  let paris = L.marker([48.866667,  2.333333]).addTo(map);
-  paris.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
+// JAPON
 
+let japon = L.marker([35.432711, 137.346125]).addTo(map);
+japon.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
 
-  // JAPON
+// let marker2 = L.marker([48.866667,  2.333333]).addTo(map);
+// marker2.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
 
-  let japon = L.marker([35.432711,  137.346125]).addTo(map);
-  japon.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
+// let marker2 = L.marker([48.866667,  2.333333]).addTo(map);
+// marker2.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
 
-  // let marker2 = L.marker([48.866667,  2.333333]).addTo(map);
-  // marker2.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
-
-  // let marker2 = L.marker([48.866667,  2.333333]).addTo(map);
-  // marker2.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
-  
-  // marker2.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
-  // let marker2 = L.marker([48.866667,  2.333333]).addTo(map);
-  
-
-
+// marker2.bindPopup("<b>Im a test!</b><br>I am the text.").openPopup();
+// let marker2 = L.marker([48.866667,  2.333333]).addTo(map);
 
 // quand tu clic sur la map elle  te donne la geolocalisation.
-let popup = L.popup();
+let popup = L.popup(onMapClick);
 
 function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
+  popup
+    .setLatLng(e.latlng)
+    .setContent('You clicked the map at ' + e.latlng.toString())
+    .openOn(map);
 }
 
 map.on('click', onMapClick);
-map.off('click', onMapClick)
-
-
 
 ////////////////////// CLIC MAP TO ADD//////////////////////
 
-
-
-// map.on("click", function(e){
-//   new L.Marker([e.latlng.lat, e.latlng.lng]).addTo(map);
-// })
+map.on('click', function (e) {
+  new L.Marker([e.latlng.lat, e.latlng.lng])
+    .addTo(map)
+    .on('click', (e) => e.target.remove());
+});
 
 // ///////////////////////////////////////////////////////////////////////
 
@@ -95,6 +87,5 @@ map.off('click', onMapClick)
 // };
 
 // let layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
