@@ -1,3 +1,4 @@
+// NAVBAR YOHAN //
 const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelector('.nav-links');
 const navButton = document.querySelectorAll('.button');
@@ -20,6 +21,18 @@ toggleButton.addEventListener('click', () => {
 //     toggleButton.classList.remove("active")
 // })
 
+// POP UP AXELLE //
+
+window.onload = function () {
+  document.getElementById('overlay').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+}
+
+// MAP MATHIEU //
+
 let map = L.map('map').setView([51.505, -0.09], 9);
 
 let Stadia_OSMBright = L.tileLayer(
@@ -27,8 +40,10 @@ let Stadia_OSMBright = L.tileLayer(
   {
     maxZoom: 20,
     attribution:
-      '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+      '<a href="https://stadiamaps.com/"></a><a href="https://openmaptiles.org/"></a><a href="http://openstreetmap.org"></a>',
   }
 );
 
-Stadia_OSMBright.addTo(map);
+  Stadia_OSMBright.addTo(map);
+
+  Stadia_OSMBright.addTo(map);
