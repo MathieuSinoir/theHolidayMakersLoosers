@@ -21,6 +21,8 @@ main {
 
 #map {
   height: 356px;
+  border-radius: 30px;
+
 }
 
 
