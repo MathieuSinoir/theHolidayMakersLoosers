@@ -1,13 +1,12 @@
 // NAVBAR YOHAN //
 const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelector('.nav-links');
-const navButton = document.querySelectorAll('.button');
+
 
 // ca fonctionne
 toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('active');
   navLinks.classList.toggle('active');
-  navButton.classList.toggle('active');
 });
 
 // POP UP AXELLE //
@@ -24,7 +23,13 @@ function closePopup() {
 
 const map = L.map('map').setView([51.505, -0.09], 3);
 
+
+let map = L.map('map').setView([51.505, -0.09], 9);
+
+let stadia_OSMBright = L.tileLayer(
+
 const Stadia_OSMBright = L.tileLayer(
+
   'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
   {
     maxZoom: 20,
@@ -32,6 +37,10 @@ const Stadia_OSMBright = L.tileLayer(
       '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
   },
 );
+
+
+stadia_OSMBright.addTo(map);
+Stadia_OSMBright.addTo(map);
 
 const uk = L.marker([51.5, -0.09]).addTo(map);
 uk.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
@@ -122,3 +131,4 @@ L.control.locate(options).addTo(map);
     }
   })
   
+
