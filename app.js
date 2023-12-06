@@ -26,7 +26,6 @@ const map = L.map('map').setView([51.505, -0.09], 3);
 
 let map = L.map('map').setView([51.505, -0.09], 9);
 
-let stadia_OSMBright = L.tileLayer(
 
 const Stadia_OSMBright = L.tileLayer(
 
