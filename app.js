@@ -95,3 +95,5 @@ let options = {
 }
 
 L.control.locate(options).addTo(map);
+
+// end of map
