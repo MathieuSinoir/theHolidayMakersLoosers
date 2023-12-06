@@ -9,16 +9,6 @@ toggleButton.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   navButton.classList.toggle('active');
 });
-// a tester
-// toggleButton.addEventListener('click', () => {
-//     navLinks.classList.toggle("close")
-// })
-
-// a tester
-// navButton.addEventListener('click', () => {
-//     navButton.classList.remove("active")
-//     toggleButton.classList.remove("active")
-// })
 
 // POP UP AXELLE //
 
@@ -86,6 +76,7 @@ Stadia_OSMBright.addTo(map);
 
 
 
+
 let options = {
   position: "topright",
   keepCurrentZoomLevel: true,
@@ -97,3 +88,37 @@ let options = {
 L.control.locate(options).addTo(map);
 
 // end of map
+
+  // SLIDER COMMENTAIRES AXELLE //
+
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    fade: 'true',
+    grabCursor: 'true',
+    centerSlide: 'true',
+    pagination: {
+      el:".swiper-pagination",
+      clickable: "true",
+      dynamicBullets: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    }
+  })
+  
