@@ -9,8 +9,6 @@ toggleButton.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   navButton.classList.toggle('active');
 });
-
-
 // a tester
 // toggleButton.addEventListener('click', () => {
 //     navLinks.classList.toggle("close")
@@ -22,24 +20,19 @@ toggleButton.addEventListener('click', () => {
 //     toggleButton.classList.remove("active")
 // })
 
-
-
 // POP UP AXELLE //
 
 window.onload = function () {
   document.getElementById('overlay').style.display = 'block';
-}
+};
 
 function closePopup() {
   document.getElementById('overlay').style.display = 'none';
 }
 
-
-
 // MAP MATHIEU //
 
-
-let map = L.map('map').setView([51.505, -0.09], 9);
+const map = L.map('map').setView([51.505, -0.09], 9);
 
 let Stadia_OSMBright = L.tileLayer(
   'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
@@ -47,16 +40,10 @@ let Stadia_OSMBright = L.tileLayer(
     maxZoom: 20,
     attribution:
       '<a href="https://stadiamaps.com/"></a><a href="https://openmaptiles.org/"></a><a href="http://openstreetmap.org"></a>',
-  }
+  },
 );
 
 Stadia_OSMBright.addTo(map);
-
-
-
-  Stadia_OSMBright.addTo(map);
-
-
 
   // SLIDER COMMENTAIRES AXELLE //
 
