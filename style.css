@@ -28,19 +28,20 @@ main {
 
 body {
   font-family: 'Sansita', sans-serif;
+  background-color: var(--first-color);
 }
 
 
 /* 1ere média query @media screen  and (min-width: 768px){} */
 /* 2eme média query @media screen  and (min-width: 1024px){} */
 
-.backgroundImage {
+/* .backgroundImage {
   body {
     color: var(--fourth-color);
     font-family: 'Sansita', sans-serif;
     background-color: var(--first-color);
   }
-}
+} */
 
 
 /*/ POP UP /*/
@@ -88,7 +89,7 @@ label {
 
 input,
 textarea {
-  width: 80%;
+  width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
@@ -128,6 +129,12 @@ input:hover {
   }
 }
 
+@media screen  and (min-width: 1024px){
+  .popup {
+    margin-left: 22%;
+  }
+}
+
 /*/ NAVBAR /*/
 /* section Yohan */
 
@@ -138,7 +145,7 @@ input:hover {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #bcb791;
-  padding: 0.5em 1em 0.5em 1em;
+  /* padding: 0.5em 1em 0.5em 1em; */
 }
 
 .nav-links ul {
@@ -148,6 +155,7 @@ input:hover {
 
 .nav-links ul li a {
   color: var(--fourth-color);
+  background-color: var(--first-color);
   padding: 0.5em 1em 0.5em 1em;
   display: block;
 }
@@ -161,7 +169,7 @@ input:hover {
 
 .toggle-button {
   position: absolute;
-  top: 1.5em;
+  top: 0.8em;
   right: 0.5em;
   margin-right: 1em;
   display: none;
@@ -193,7 +201,7 @@ input:hover {
 
 .Sign {
   align-items: center;
-  margin-top: 0.7em;
+  margin-top: 0.5em;
   color: var(--fourth-color);
   text-decoration: none;
 }
@@ -207,6 +215,7 @@ input:hover {
   .nav-links {
     display: none;
     width: 100%;
+    background-color: var(--first-color);
   }
 
   .nav {
@@ -232,6 +241,10 @@ input:hover {
   .nav-links.active {
     display: flex;
   }
+
+  .Logo {
+    margin-right: 14em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -239,12 +252,16 @@ input:hover {
     display: none;
   }
 
+  .nav {
+    height: 11vh;
+  }
+
 
   .nav-links ul{
     flex-direction: row;
     justify-content: center;
-    margin-top: -3.5em;
-    margin-left: 28em;
+    margin-top: -4.5em;
+    margin-left: 26em;
     width: 80%;
   }
 
@@ -255,6 +272,11 @@ input:hover {
   .nav-links {
     display: flex;
     width: 15em;
+    margin-top: -0.2em;
+  }
+
+  .nav-links ul li a {
+    background-color: var(--first-color);
   }
 
   .nav-links li a:hover {
@@ -265,7 +287,21 @@ input:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
 
+  .Sign {
+    margin-top: 0.6em;
+    margin-right: 1.5em;
+  }
+
+  .Logo {
+    width: 4em;
+  }
+}
+
+@media screen  and (min-width: 1024px){
+  .nav-links {
+    margin-left: 16em;
   }
 }
 
@@ -292,7 +328,7 @@ input:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3em 4em;
+  padding: 3em 2em;
 }
 
 .login {
@@ -330,15 +366,47 @@ input:hover {
   font-size: 1.5em;
 }
 
+@media (min-width: 375px) {
+  .user-img{
+    width: 100%;
+  }
 
-@media screen and (max-width: 768px) {
+  .logs {
+    margin-left: 10%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
   .user-img {
     width: 100%;
     height: 100% auto;
   }
 
   .logs {
-    margin-left: 8%;
+    margin-left: 12%;
+  }
+}
+
+@media screen  and (min-width: 1024px){
+  .user-all {
+    display: flex;
+  }
+
+  .user-img {
+    max-width: 100%;
+  }
+
+  .user-desc {
+    width: 50vw;
+  }
+
+  .logs {
+    margin-left: 0%;
+  }
+
+  .login,.createlog {
+    width: 40vw;
   }
 }
 
@@ -380,7 +448,7 @@ input:hover {
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.3em;
-  width: 45vw;
+  width: 50vw;
   height: 8vh;
   border-radius: 40px;
   background-color: var(--fifth-color);
@@ -497,7 +565,7 @@ input:hover {
   color: var(--second-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .google {
     width: 35vw;
   }
@@ -508,6 +576,30 @@ input:hover {
 
   .connexion-footer {
     margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .google {
+    height: 10vh;
+  }
+
+  .facebook {
+    height: 10vh;
+  }
+
+  .email-text,.mot-de-passe-text {
+    height: 10vh;
+    font-size: 1.2em;
+    width: 50vw;
+  }
+
+  .forgotpassword {
+    margin-top: 0em;
+  }
+
+  .connecter {
+    height: 10vh;
   }
 }
 
@@ -596,6 +688,34 @@ input:hover {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .sub-email {
+    margin-top: -1em;
+  }
+
+  .sub-text {
+    font-size: 1.2em;
+    height: 8vh;
+    width: 60vw;
+  }
+
+  .sub-password {
+    margin-top: -1em;
+  }
+
+  .sub-second-password {
+    margin-top: -1em;
+  }
+
+  .sub-button {
+    height: 8vh;
+  }
+
+  .sub-button:hover {
+    color: var(--fifth-color);
+  }
+}
+
 
 
 
@@ -644,7 +764,7 @@ input:hover {
 .title {
   max-width: 100%;
   text-align: center;
-  margin-left: 2em;
+  margin-left: 2.5em;
   margin-top: -7em;
   margin-bottom: 6em;
   display: flex;
@@ -677,6 +797,18 @@ input:hover {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 4em;
+    margin-top: -7em;
+    margin-left: 2.5em;
+  }
+
+  .search-bar {
+    margin-top: -0.7em;
+  }
+}
+
                                                               /* section Mathieu */
 
 
@@ -702,9 +834,13 @@ input:hover {
 @media screen and (min-width: 768px) {
   .caroussel {
     max-width: 600px;
-    max-height: 100px;
+    max-height: 150px;
     border-radius: 20px;
     overflow: hidden;
+  }
+
+  .exempleHouse {
+    height: 100px;
   }
   
   .slider {
@@ -719,6 +855,13 @@ input:hover {
   .body-carr{
     padding: 0em 0em 0em 2em;
   }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .caroussel {
+    max-width: 800px;
+  } 
 }
 
 .slider {
@@ -827,6 +970,13 @@ input:hover {
 
                                                         /* Section Axelle */
 
+.current-trend {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -16em;
+}                                                        
+
+
 .places-not-recommended {
   display: block;
   text-align: center;
@@ -837,81 +987,67 @@ input:hover {
 
 .places-not-recommended h3 {
   padding-bottom: 0.5em;
-
   color: var(--sixth-color);   
 }
 
 
 .places-not-recommended p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+  /* font-size: small; */
   padding: 0.5em;
 }
 
 
 .details-picture {
-  display: flex;
-  height: 30vh;
+  max-height: 60vh;
   margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .image-container {
   display: flex;
+  justify-content: space-around;
   flex-direction: row-reverse;
-  width: 100%;
-  padding: 20px;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.image-container ul {
+.room-img {
   display: flex;
-  width: 50%;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   justify-content: space-around;
-  padding: 20px;
-  list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+  flex-direction: row-reverse;
 }
 
 .room-with-a-sink {
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 15px; 
+  width: 40vw;
+  border-radius: 20px;
 }
 
 
+
 @media screen and (min-width: 768px) {
-  .places-not-recommended h3 {
-    font-size: 2em;
+  .room-titre {
+    font-size: 1.2em;
   }
 
-  .places-not-recommended p {
-    font-size: 1.3em;
+  .current-trend {
+    margin-bottom: -8em;
   }
+}
 
-  .image-container {
-    height: 80vh;
-  }
-
+@media screen and (min-width: 1024px) {
   .room-with-a-sink {
-    height: 100%;
-    width: 90%;
+    width: 30vw;
   }
-
-  .room-img {
-    width: 100%;
-    padding-left: 6em;
-  }
-
 
   .room-titre {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 
   .room-desc {
     font-size: 1.3em;
-    margin-left: 2em;
   }
 }
 
@@ -920,7 +1056,7 @@ input:hover {
 
 
 
-.comments-container h4 {
+ .comments-container h4 {
   display: flex;
   font-size: 1.5em;
   padding-top: 1em;
@@ -1036,11 +1172,6 @@ input:hover {
 }
 
 
-@media screen and (min-width: 768px){
-  .comments-container {
-    margin-top: 12em;
-  }
-}
 
 
 .swiper-navBtn{
@@ -1097,6 +1228,10 @@ input:hover {
   .swiper-navBtn {
     display: none;
   }
+
+  .comments-container {
+    margin-top: 17em;
+  }
 } 
 
 
@@ -1113,15 +1248,23 @@ input:hover {
     width: 100%;
   }
 
-  .logo-footer h1 {
-    padding-left: 0.7em;
-    padding-bottom: 1em;
+  .Logo-text {
+    padding: 0em 0.5em;
+  }
+
+  .Logo-footer {
+    float: left;
+    width: 4em;
+    height: 4em;
+    padding-right: 0.5em;
+    margin-bottom: -0.5em;
   }
 
   .foot-description {
     font-size: 0.8em;
-    text-align: justify;
-    padding: 0em 1em;
+    line-height: 1.;
+    text-align: match-parent;
+    shape-outside: content-box;
   }
 
 
@@ -1181,9 +1324,16 @@ input:hover {
 
 
 @media screen and (min-width: 768px) {
+  .Logo-footer {
+    width: 7em;
+    height: 7em;
+  }
+  
+  
   .foot-description {
     font-size: 1em;
     padding: 0em 2em;
+    text-align: justify;
   }
 
   .logo-facebook,.logo-twiter,.logo-insta {
@@ -1197,7 +1347,6 @@ input:hover {
 
   .Continents {
     font-size: 1.4em;
-    margin-right: 3em;
   }
 
   .Article {
@@ -1206,8 +1355,53 @@ input:hover {
 
   .Contact {
     font-size: 1.4em;
-    margin-right: 1em;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .foot {
+    display: flex;
+  }
+  
+  .Logo-footer {
+    margin-left: 2em;
+  }
+
+  .foot-description {
+    font-size: 1em;
+    width: 80%;
+    text-align: justify;
+  }
+
+  .foot-lien {
+    justify-content: space-around;
+  }
+
+
+  .logos-social {
+    justify-content: flex-start;
+    margin-left: 0.4em;
+  }
+
+  .logo-facebook,.logo-twiter,.logo-insta {
+    width: 10vw;
+    justify-content: flex-start;
+  }
+
+  .foot-lien {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -2.5em;
+  }
+
+  .Contact {
+    margin-left: 3.5em;
+  }
+
+  .Continents {
+    margin-right: 3.5em;
+  }
+
 }
 
 
