@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <H2>Bonjour !!!</H2>
+        <form id="reclamForm">
+            <div class="Formulaire">
+            <textarea id="content" cols="30" rows="10" placeholder="Entrez votre reclamation ici"></textarea>
+           </div>
+           <input type="submit" value="Envoyer le formulaire" />
+        </form>
+    </section>
+    <script class="alerte">
+
+        const reclamForm = document.querySelector("#reclamForm")
+
+        reclamForm.addEventListener("submit", (e) =>  {
+            e.preventDefault()
+            const content = document.querySelector("#content")
+             
+            if (content.value.length > 15) {
+                alert("Nous avons bien pris en compte votre reclamation")
+            } else {
+                alert("Votre message doit faire au moins 15 caractères")
+            }
+        })
+    </script>
+</body>
+</html>
