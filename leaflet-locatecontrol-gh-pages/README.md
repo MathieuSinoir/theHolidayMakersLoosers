@@ -36,7 +36,7 @@ The control is [available from JsDelivr CDN](https://www.jsdelivr.com/projects/l
 
 #### Add the JavaScript and CSS files
 
-Then include the CSS and JavaScript files. 
+Then include the CSS and JavaScript files.
 
 ##### With CDN
 
@@ -50,9 +50,9 @@ In this example, we are loading the [files from the JsDelivr CDN](https://www.js
 ##### With `npm`
 
 ```ts
-import 'leaflet.locatecontrol' // Import plugin
-import 'leaflet.locatecontrol/dist/L.Control.Locate.min.css' // Import styles
-import L from 'leaflet' // Import L from leaflet to start using the plugin
+import "leaflet.locatecontrol"; // Import plugin
+import "leaflet.locatecontrol/dist/L.Control.Locate.min.css"; // Import styles
+import L from "leaflet"; // Import L from leaflet to start using the plugin
 ```
 
 #### Add the following snippet to your map initialization:
