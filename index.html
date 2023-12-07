@@ -16,8 +16,9 @@
 
 
     <link rel="stylesheet" href="leaflet-locatecontrol-gh-pages/dist/L.Control.Locate.min.css">
-    </head>
+</head>
     
+<body>
     <header class="header">
         <nav class="nav">
         
@@ -37,8 +38,8 @@
                     <li><a class="button" href="#tendances">Tendances</a></li>
                     <li><a class="button" href="#commentaires">Commentaires</a></li>
                 </ul>
-
-    <body>
+            </div>
+    </header>
 
         <!-- Section pop-up-->
         <div class="overlay" id="overlay">
@@ -48,13 +49,13 @@
 
                 <form action="#" method="post" onsubmit="submitForm()">
                     <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Ex : Jean-Aimar" required>
 
                     <label for="email">E-mail :</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Ex : LePCvaCramer@hotmail.fr" required>
 
                     <label for="story">Votre premier post :</label>
-                    <textarea id="story" name="story" rows="4" required></textarea>
+                    <textarea id="story" name="story" rows="4" placeholder="Si vous n'aimez pas le site, je vous traquerais et vous tuerais" required></textarea>
 
                     <input type="submit" value="Partager" id="btn-share" required>
                 </form>
@@ -85,17 +86,38 @@
 
         <!-- Section Mathieu -->
 
-
         <main class="main">
 
             <body onload=>
-
                 <section class="interactiveMap">
                     <section class="map">
                         <div id="map"></div>
+                    </section> 
+                    <section>
+                      <div class="container">
+                        <div class="slider-wrapper">
+                            <button id ="prev-slide" class="slide-button material-symbols-rounded"><</button>
+                            <div class="image-list">
+                                <img src="assets/chambre2personnes.jpg" alt="img-1" class="image-item">
+                                <img src="assets/economy-room-with-sink-v2578795-1440.jpg" alt="img-2" class="image-item">
+                                <img src="assets/fenetreSurMur.jpg" alt="img-3" class="image-item">
+                                <img src="assets/litSeul.jpg" alt="img-4" class="image-item">
+                                <img src="assets/piscinePrivative.jpg" alt="img-5" class="image-item">
+                                <img src="assets/sourisLit.jpeg" alt="img-6" class="image-item">
+                                <img src="assets/horreur.png" alt="img-7" class="image-item">
+                                <img src="assets/plage-bondee.jpeg" alt="img-8" class="image-item">
+                            </div>
+                            <button id ="next-slide" class="slide-button material-symbols-rounded">></button>
+                        </div>
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
+                     </div>
+
+                    <!--
                         <section class="pirLogementMap">
-                            <!-- ajouter tiret sur le cote gauche du H2 -->
-                            <!-- <h3 class="titreMap">Maps</h3> -->
                             <section class="mapExempleHouse">
                                 <section class="exempleHouse">
 
@@ -167,13 +189,13 @@
                                             </div>
                                         </div>
                                     </section>
-                                    
+                                </section>
+                            </section>
+                        </section>
+                    </section> -->
+                                
 
 
-
-
-
- 
     
                                             <!-- Section Axelle -->
 
@@ -190,8 +212,7 @@
         <section class="details-picture">
             <div class="image-container">
                 <div class="room-img">
-                <img class="room-with-a-sink" src="https://media-cdn.tripadvisor.com/media/photo-s/02/29/d9/9c/my-room-cold-old-and.jpg" alt="Une chambre avec un lavabo" >
-                </div> 
+                    <img class="room-with-a-sink" src="https://media-cdn.tripadvisor.com/media/photo-s/02/29/d9/9c/my-room-cold-old-and.jpg" alt="Une chambre avec un lavabo" >
                     <ul>
                         <h4 class="room-titre">Détails de la chambre</h4><br>
                         <li class="room-desc">1 lit</li>
@@ -199,6 +220,7 @@
                         <li class="room-desc">1 lavabo</li>
                         <li class="room-desc">2ème étage</li>
                     </ul>
+                </div> 
             </div>
         </section>
 
@@ -219,7 +241,10 @@
                             <div class="card-content">
                                 <h2 class="name">Jean-Claude</h2>
                                 <p class="description">V'ai été un peu défu quand je fuis arrivé. Ve pensais ne pas avoir d'eau dans ma fhambre et en fait un lavabo était prévent... Ve ferai pluf attenfion la profhaine fois !</p>
-                            <button class="button">Like</button>
+                             <div id="1">
+                                <button class="button" onclick="incrementCounter('1')">💛</button>
+                                 <span id="number1">0</span>
+                            </div>
                             </div>
                         </div>
 
@@ -234,7 +259,10 @@
                             <div class="card-content">
                                 <h2 class="name">Titeuf</h2>
                                 <p class="description">Cette chambre était parfaite pour des vacances catastrophiques ! Petit bémol : le lavabo qui était cassé... comment je nettoie ma mèche ? C'est po juste !</p>
-                            <button class="button">Like</button>
+                            <div id="2">
+                                <button class="button" onclick="incrementCounter('2')">💛</button>
+                                <span id="number2">0</span>
+                             </div>
                             </div>
                         </div>
 
@@ -248,7 +276,10 @@
                             <div class="card-content">
                                 <h2 class="name">Patrick</h2>
                                 <p class="description">J'ai trouvé cette chambre un peu trop confortable à mon goût. Cependant, le lavabo dans la salle de bain m'a ruiné les vacances.</p>
-                            <button class="button">Like</button>
+                            <div id="3">
+                                <button class="button" onclick="incrementCounter('3')">💛</button>
+                                <span id="number3">0</span>
+                             </div>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -261,7 +292,10 @@
                             <div class="card-content">
                                 <h2 class="name">Scooby-Doo</h2>
                                 <p class="description">Il y avait des croques Scooby partout ! C'était délicieux. Ah et pour la chambre ? Je sais plus, j'ai fait que manger...</p>
-                            <button class="button">Like</button>
+                            <div id="4">
+                                <button class="button" onclick="incrementCounter('4')">💛</button>
+                                 <span id="number4">0</span>
+                            </div>
                             </div>
                         </div>
 
@@ -275,7 +309,10 @@
                             <div class="card-content">
                                 <h2 class="name">Monsieur Crabs</h2>
                                 <p class="description">Si vous voulez une chambre qui coûte de l'argent : foncez ! Moi qui compte mon argent tous les jours, j'ai été heureux (ou presque) de le dépenser dans cette somptueuse chambre.</p>
-                            <button class="button">Like</button>
+                             <div id="5">
+                                 <button class="button" onclick="incrementCounter('5')">💛</button>
+                                <span id="number5">0</span>
+                            </div>
                             </div>
                         </div>
 
@@ -289,15 +326,16 @@
                             <div class="card-content">
                                 <h2 class="name">Bob l'éponge</h2>
                                 <p class="description">J'ai passé de très mauvaises vacances : la chambre n'était pas carré mais rectangulaire... des vacances ratées comme on aime !</p>
-                            <button class="button">Like</button>
+                            <div id="6">
+                                <button class="button" onclick="incrementCounter('6')">💛</button>
+                                <span id="number6">0</span>
+                            </div>
                             </div>
                         </div>
 
                         <div class="card swiper-slide">
                             <div class="image-content">
                                 <span class ="overlay-comments"></span>
-
-
                                 <div class="card-image">
                                     <img src="assets/profile-picture-ariel.png" alt="" class="card-img">
                                 </div>
@@ -305,8 +343,10 @@
                             <div class="card-content">
                                 <h2 class="name">Ariel</h2>
                                 <p class="description">L'océan est à des milliers de kilomètres de cette chambre. Je m'y sentais comme un poisson dans l'eau !</p>
-                            
-                            <button class="button">Like</button>
+                        <div id="7">
+                            <button class="button" onclick="incrementCounter('7')">💛</button>
+                            <span id="number7">0</span>
+                        </div>
                             </div>
                         </div>
                     </div>
