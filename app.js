@@ -3,11 +3,42 @@ const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelector('.nav-links');
 
 
-// ca fonctionne
+// barre de recherche Damien
+
+const onglet = [
+  {name:"Tendances"},
+  {name:"Commentaires"},
+];
+
+const searchinput = document.getElementById('searchInput');
+const span = document.getElementById('mySpan');
+
+searchinput.addEventListener('keyup', function (){
+  const input = searchinput.value;
+
+  const result = onglet.filter(item => item.name.toLocaleLowerCase().includes(input.toLocaleLowerCase()));
+
+  let suggestion = '';
+
+  if (input !=''){
+  result.forEach ( resultItem =>
+      suggestion +=`
+        <div class="suggestion">${resultItem.name}</div> 
+    `
+    )
+  }
+
+  document.getElementById('suggestions').innerHTML = suggestion;
+})
+
+  // ca fonctionne
 toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('active');
   navLinks.classList.toggle('active');
 });
+
+
+
 
 // POP UP AXELLE //
 
@@ -21,7 +52,10 @@ function closePopup() {
 
 // MAP MATHIEU //
 
+
+
 const map = L.map('map').setView([51.505, -0.09], 3);
+
 
 
 let map = L.map('map').setView([51.505, -0.09], 9);
@@ -37,6 +71,11 @@ const Stadia_OSMBright = L.tileLayer(
       '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
   },
 );
+
+
+  Stadia_OSMBright.addTo(map);
+
+  Stadia_OSMBright.addTo(map);
 
 
 stadia_OSMBright.addTo(map);
@@ -131,4 +170,5 @@ L.control.locate(options).addTo(map);
     }
   })
   
+
 
