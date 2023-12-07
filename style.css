@@ -503,6 +503,8 @@ input[type="submit"]{
   justify-content: center;
   background-size: cover;
   filter: opacity(80%);
+  padding-bottom: 18%;
+  padding-top: 3;
 }
 
 .title {
@@ -519,6 +521,16 @@ input[type="submit"]{
     -1px 1px 0 #000,
     -1px -1px 0 #000,
     1px -1px 0 #000;
+}
+
+#search{
+  max-width: 100%;
+  display: flex;
+  flex:center;
+  border-radius: 1.5em;
+  width: 20% solid grey;
+  margin-top: 5%;
+  margin-left: 10%;
 }
 
                                                               /* section Mathieu */
@@ -550,7 +562,7 @@ input[type="submit"]{
 .sub-button:hover {
   font-size: 1.6em;
 }
-/* section Damien */
+/* =============================section Damien */
 
 .backgroundImage {
   max-width: 100%;
@@ -576,6 +588,33 @@ input[type="submit"]{
     -1px -1px 0 #000,
     1px -1px 0 #000;
 }
+
+ #searchInput{
+  margin: 0;
+  border-radius: 50px;
+  width: 60%;
+ }
+ .container{
+   width: 60%;
+   margin: 100px auto;
+ }
+
+ .input{
+  font-size: 25px;
+  width: 100%;
+ }
+ .suggestion{
+  font-size: 15px;
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .suggestion:hover{
+  border-radius: 50px;
+  background-color: #fcf3ca;;
+  color: black;
+ }
+
 #map {
   height: 356px;
 }
@@ -948,6 +987,7 @@ input[type="submit"]{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
 } */
 
 .places-not-recommended {
@@ -957,6 +997,7 @@ input[type="submit"]{
   text-align: center;
   padding-top: 2.5em;
   margin: 20px;
+  max-width: 100%;
 }
 
 .places-not-recommended h3 {

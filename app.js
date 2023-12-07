@@ -3,7 +3,35 @@ const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelector('.nav-links');
 const navButton = document.querySelectorAll('.button');
 
-// ca fonctionne
+// barre de recherche Damien
+
+const onglet = [
+  {name:"Tendances"},
+  {name:"Commentaires"},
+];
+
+const searchinput = document.getElementById('searchInput');
+const span = document.getElementById('mySpan');
+
+searchinput.addEventListener('keyup', function (){
+  const input = searchinput.value;
+
+  const result = onglet.filter(item => item.name.toLocaleLowerCase().includes(input.toLocaleLowerCase()));
+
+  let suggestion = '';
+
+  if (input !=''){
+  result.forEach ( resultItem =>
+      suggestion +=`
+        <div class="suggestion">${resultItem.name}</div> 
+    `
+    )
+  }
+
+  document.getElementById('suggestions').innerHTML = suggestion;
+})
+
+  // ca fonctionne
 toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('active');
   navLinks.classList.toggle('active');
