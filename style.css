@@ -1114,13 +1114,28 @@ input[type="submit"]{
     font-size: 0.7em;
 }
 
+.Formulaire {
+    box-sizing: border-box;
+    height: 2px;
+    background-color: greenyellow;
+    padding: auto;
+}
 
+#content {
+    width: 20vw;
+}
+.Visible {
+    text-align: center;
 
+}
 
+.Visible2 {
+    text-align: center;
+}
+.Visible p {
+    color: #3498DB;
+}
 
-
-
-
-
-
-
+.Visible2 p {
+    color: blue;
+}
