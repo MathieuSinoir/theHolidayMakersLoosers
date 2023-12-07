@@ -2,11 +2,43 @@
 const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelector('.nav-links');
 
-// ca fonctionne
+
+// barre de recherche Damien
+
+const onglet = [
+  {name:"Tendances"},
+  {name:"Commentaires"},
+];
+
+const searchinput = document.getElementById('searchInput');
+const span = document.getElementById('mySpan');
+
+searchinput.addEventListener('keyup', function (){
+  const input = searchinput.value;
+
+  const result = onglet.filter(item => item.name.toLocaleLowerCase().includes(input.toLocaleLowerCase()));
+
+  let suggestion = '';
+
+  if (input !=''){
+  result.forEach ( resultItem =>
+      suggestion +=`
+        <div class="suggestion">${resultItem.name}</div> 
+    `
+    )
+  }
+
+  document.getElementById('suggestions').innerHTML = suggestion;
+})
+
+  // ca fonctionne
 toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('active');
   navLinks.classList.toggle('active');
 });
+
+
+
 
 // POP UP AXELLE //
 
@@ -22,9 +54,11 @@ function closePopup() {
 
 const map = L.map('map').setView([51.505, -0.09], 3);
 
+
 const Stadia_OSMBright = L.tileLayer(
   'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
   {
+
     maxZoom: 20,
   }
 );
@@ -214,5 +248,6 @@ function saveCounterValue(id, value) {
   // Ce code sert à auvegarder la valeur du compteur dans le localStorage
   localStorage.setItem('counter' + id, value);
 }
+
 
 
