@@ -35,13 +35,6 @@ body {
 /* 1ere média query @media screen  and (min-width: 768px){} */
 /* 2eme média query @media screen  and (min-width: 1024px){} */
 
-/* .backgroundImage {
-  body {
-    color: var(--fourth-color);
-    font-family: 'Sansita', sans-serif;
-    background-color: var(--first-color);
-  }
-} */
 
 
 /*/ POP UP /*/
@@ -145,7 +138,6 @@ input:hover {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #bcb791;
-  /* padding: 0.5em 1em 0.5em 1em; */
 }
 
 .nav-links ul {
@@ -1403,6 +1395,3 @@ input:hover {
   }
 
 }
-
-
-
