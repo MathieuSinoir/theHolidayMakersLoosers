@@ -8,6 +8,42 @@ toggleButton.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+
+
+// NAVBAR DAMIEN //
+
+const onglet = [
+  {name:"Tendances"},
+  {name:"Commentaires"},
+];
+
+const searchinput = document.getElementById('searchInput');
+const span = document.getElementById('mySpan');
+
+
+searchinput.addEventListener('keyup', function (){
+  const input = searchinput.value;
+
+
+  const result = onglet.filter(item => item.name.toLocaleLowerCase().includes(input.toLocaleLowerCase()));
+
+
+  let suggestion = '';
+
+
+  if (input !=''){
+  result.forEach ( resultItem =>
+      suggestion +=`
+        <div class="suggestion">${resultItem.name}</div>
+    `
+    );
+  };
+
+
+  document.getElementById('suggestions').innerHTML = suggestion;
+});
+
+
 // POP UP AXELLE //
 
 window.onload = function () {
@@ -22,32 +58,47 @@ function closePopup() {
 
 const map = L.map('map').setView([51.505, -0.09], 3);
 
+
 const Stadia_OSMBright = L.tileLayer(
+
+
   'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
   {
     maxZoom: 20,
-  }
+    attribution:
+      '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+  },
 );
 
+
+
+
 Stadia_OSMBright.addTo(map);
+
 
 const uk = L.marker([51.5, -0.09]).addTo(map);
 uk.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
 
+
 const france = L.marker([48.866667, 2.333333]).addTo(map);
-france.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
+france.bindPopup('<b>Plus sale tu meurs !</b><br> J ai adoré le detester.').openPopup();
+
 
 const japon = L.marker([35.432711, 137.346125]).addTo(map);
 japon.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
 
+
 const chine = L.marker([41.27729, 90.878906]).addTo(map);
 chine.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
 
+
 const brasil = L.marker([-10.617756, -50.141602]).addTo(map);
-brasil.bindPopup('<b>Im a test!</b><br>I am the text.').openPopup();
+brasil.bindPopup('<b>Non, pas ici !</b><br> Une horreur.').openPopup();
+
 
 // quand tu clic sur la map elle  te donne la geolocalisation.
 const popup = L.popup(onMapClick);
+
 
 function onMapClick(e) {
   popup
@@ -56,26 +107,37 @@ function onMapClick(e) {
     .openOn(map);
 }
 
+
 map.on('click', onMapClick);
+
 
 /// /////////////////// CLIC MAP TO ADD//////////////////////
 
+
 map.on('click', (e) => {
+
+
   new L.Marker([e.latlng.lat, e.latlng.lng])
     .addTo(map)
     .on('click', (e) => e.target.remove());
 });
 
+
 Stadia_OSMBright.addTo(map);
 
+
 let options = {
-  position: 'topright',
+  position: "topright",
   keepCurrentZoomLevel: true,
   flyTo: true,
   returnToPrevBounds: true,
-};
+
+
+}
+
 
 L.control.locate(options).addTo(map);
+
 
 // end of map
 
