@@ -1,3 +1,4 @@
+
 // NAVBAR YOHAN //
 const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelector('.nav-links');
@@ -276,5 +277,3 @@ function saveCounterValue(id, value) {
   // Ce code sert à auvegarder la valeur du compteur dans le localStorage
   localStorage.setItem('counter' + id, value);
 }
-
-
