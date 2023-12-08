@@ -62,15 +62,11 @@ const map = L.map('map').setView([51.505, -0.09], 3);
 const Stadia_OSMBright = L.tileLayer(
 
 
-  'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?access_token={accessToken}', {attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-
-  },
+  'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
   {
     maxZoom: 20,
     attribution:
       '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
-      id: "stadia.street", 
-      accessToken: "a076f73e-2758-4d9a-8b8a-71086515ad80"
   },
 );
 
