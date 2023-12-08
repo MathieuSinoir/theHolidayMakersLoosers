@@ -62,7 +62,7 @@ const map = L.map('map').setView([51.505, -0.09], 3);
 const Stadia_OSMBright = L.tileLayer(
 
 
-  'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?access_token={a076f73e-2758-4d9a-8b8a-71086515ad80}',
+  'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?access_token=a076f73e-2758-4d9a-8b8a-71086515ad80',
   {
     maxZoom: 20,
     attribution:
