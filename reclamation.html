@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <H2>Bonjour !!!</H2>
+    <section class="titre-form">
+        <h2>Bonjour, si vous avez des réclamations parce que vous avez passé de trop bonnes vacances, c'est par ici ⬇️</h2>
         <form id="reclamForm">
             <div class="Formulaire">
-            <textarea id="content" cols="30" rows="10" placeholder="Entrez votre reclamation ici"></textarea>
+            <textarea id="content" cols="30" rows="10" placeholder="Entrez votre reclamation ici."></textarea>
            </div>
-           <input type="submit" value="Envoyer le formulaire" />
         </form>
+    </section>
+    <section class="button-submit">
+        <div>
+            <button id ="submit-form">Envoyer le formulaire</button>
+         </div>
     </section>
     <script class="alerte">
 
@@ -25,9 +30,9 @@
             const content = document.querySelector("#content")
              
             if (content.value.length > 15) {
-                alert("Nous avons bien pris en compte votre reclamation")
+                alert("Nous avons bien pris en compte votre réclamation !")
             } else {
-                alert("Votre message doit faire au moins 15 caractères")
+                alert("Votre message doit faire au moins 15 caractères.")
             }
         })
     </script>

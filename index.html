@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,14 +17,9 @@
 
 
     <link rel="stylesheet" href="leaflet-locatecontrol-gh-pages/dist/L.Control.Locate.min.css">
-
-
-    <title>The Holiday Makers Loosers</title>
 </head>
-
-<body>
     
-
+<body>
     <header class="header">
         <nav class="nav">
         
@@ -44,9 +40,7 @@
                     <li><a class="button" href="#commentaires">Commentaires</a></li>
                 </ul>
             </div>
-        </nav>
     </header>
-
 
         <!-- Section pop-up-->
         <div class="overlay" id="overlay">
@@ -74,26 +68,20 @@
 
         <!-- Section Damien -->
 
-
-
 <main>
-
-    <div class="container">
-    <input type="search" id="searchInput" value = "" placeholder="search ..."/>
-    <div id="suggestions"></div>
-    
-
+    <div class="search-container">
+        <input type="search" id="searchInput" value = "" placeholder="Rechercher..."/>
+        <div id="suggestions"></div>
     <section>
         <div>
             <img class="backgroundImage"src="/assets/maxresdefault-2-1.png" alt="piscine salle">
         </div>
-            <h1 class="title">The Holiday Makers Loosers </h1>
-            <div class="search-bar">
-                <input type="search" id="search" value = "" placeholder="cherche un endroit catastrophique">
-                <button id="loupe" type="submit" class="loupe"><svg class="loupe-img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+        <h1 class="title">The Holiday Makers Loosers </h1>
+        <div class="search-bar">
+            <input type="search" id="search" value = "" placeholder="cherche un endroit catastrophique">
+            <button id="loupe" type="submit" class="loupe"><svg class="loupe-img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
                 <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 19.585938 21.585938 C 20.137937 22.137937 21.033938 22.137938 21.585938 21.585938 C 22.137938 21.033938 22.137938 20.137938 21.585938 19.585938 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
             </svg></button>
-            </div>
         </div>
     </section>  
 </main>
@@ -101,149 +89,74 @@
 
         <!-- Section Mathieu -->
 
-
         <main class="main">
 
             <body onload=>
-
                 <section class="interactiveMap">
                     <section class="map">
                         <div id="map"></div>
-                        <section class="pirLogementMap">
-                            <!-- ajouter tiret sur le cote gauche du H2 -->
-                            <!-- <h3 class="titreMap">Maps</h3> -->
-                            <section class="mapExempleHouse">
-                                <section class="exempleHouse">
-
-                                
-
-
-
-
-
-
-
-
-                                    <section class="caroussel">
-                                        <div class="slider">
-                                            <div class="photo">
-                                                <div class="image-carr">
-                                                    <img class="img1" src="assets/fenetreSurMur.jpg" alt="">
-                                                </div>
-                                                <div class="body-carr">
-                                                    <div class="titre-carr">Vue et lumière</div>
-                                                    <div class="description-carr">"Lumière absente due à la belle vue
-                                                        sur les parpaings"</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="photo">
-                                                <div class="image-carr">
-                                                    <img class="img2" src="assets/chambre2personnes.jpg" alt="">
-                                                </div>
-                                                <div class="body-carr">
-                                                    <div class="titre-carr">Chambre pour couple en séparation</div>
-                                                    <div class="description-carr">"Chambre avec deux lits séparés idéal
-                                                        pour couple en instance de divorce"</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="photo">
-                                                <div class="image-carr">
-                                                    <img class="img3" src="assets/sourisLit.jpeg" alt="">
-                                                </div>
-                                                <div class="body-carr">
-                                                    <div class="titre-carr">Animal de compagnie</div>
-                                                    <div class="description-carr">"Petite surprise! Un animal vous est
-                                                        offert à la location de la chambre"</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="photo">
-                                                <div class="image-carr">
-                                                    <img class="img4" src="assets/piscinePrivative.jpg" alt="">
-                                                </div>
-                                                <div class="body-carr">
-                                                    <div class="titre-carr">Grande piscine</div>
-                                                    <div class="description-carr">"Grande piscine disponible il faut
-                                                        juste attendre qu'il pleuve pour qu'elle se remplisse"</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="photo">
-                                                <div class="image-carr">
-                                                    <img class="img5" src="assets/litSeul.jpg" alt="">
-                                                </div>
-                                                <div class="body-carr">
-                                                    <div class="titre-carr">Chambre avec grand espace</div>
-                                                    <div class="description-carr">"Beaucoup de potentiel, on se cogne
-                                                        nul part, il faut juste tout laisser dans votre valise"</div>
-                                                </div>
-                                            </div>
-                                            <div class="photo">
-                                                <div class="image-carr">
-                                                    <img class="img1" src="assets/fenetreSurMur.jpg" alt="">
-                                                </div>
-                                                <div class="body-carr">
-                                                    <div class="titre-carr">Vue et lumière</div>
-                                                    <div class="description-carr">"Lumière absente due à la belle vue
-                                                        sur les parpaings"</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    
-                                </section>
-                            </section>
-                        </section>
+                    </section> 
+                    <section>
+                      <div class="container">
+                        <div class="slider-wrapper">
+                            <button id ="prev-slide" class="slide-button material-symbols-rounded"><</button>
+                            <div class="image-list">
+                                <img src="assets/chambre2personnes.jpg" alt="img-1" class="image-item">
+                                <img src="assets/economy-room-with-sink-v2578795-1440.jpg" alt="img-2" class="image-item">
+                                <img src="assets/fenetreSurMur.jpg" alt="img-3" class="image-item">
+                                <img src="assets/litSeul.jpg" alt="img-4" class="image-item">
+                                <img src="assets/piscinePrivative.jpg" alt="img-5" class="image-item">
+                                <img src="assets/sourisLit.jpeg" alt="img-6" class="image-item">
+                                <img src="assets/horreur.png" alt="img-7" class="image-item">
+                                <img src="assets/plage-bondee.jpeg" alt="img-8" class="image-item">
+                            </div>
+                            <button id ="next-slide" class="slide-button material-symbols-rounded">></button>
                         </div>
-                    </section>
-                </section>
-            </body>
-        </main>
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
+                     </div>
 
-
- 
     
                                             <!-- Section Axelle -->
-
-      
-
 
                     <section class="current-trend">
                         <div class="container">
                             <div class="places-not-recommended" id="tendances">
                                 <h3>❌ Les endroits pas recommandés du tout (aux dernières nouvelles...)</h3>                            
-                                <p> Découvrez notre merveilleuse chambre d'hôtel, vue sur mur. Cette chambre, 
-                                aux allures charmantes, contient tout l'essentiel pour passer des vacances horribles. 
-                                Un lit, une télévision, un cadre de décoration et le tour est joué. Et si une envie 
-                                pressante se fait sentir : le lavabo est à portée de main !</p>
-                            </div>
-                        </div>
-                    
-                        <section class="details-picture">
-                            <div class="image-container">
-                                <div class="room-img">
-                                    <img class="room-with-a-sink" src="https://media-cdn.tripadvisor.com/media/photo-s/02/29/d9/9c/my-room-cold-old-and.jpg" alt="Une chambre avec un lavabo" >
-                                </div>
-                                <div>
-                                    <ul>
-                                        <h4 class="room-titre">Détails de la chambre</h4><br>
-                                        <li class="room-desc">1 lit</li>
-                                        <li class="room-desc">0 télé</li>
-                                        <li class="room-desc">Armoire sans penderie</li>
-                                        <li class="room-desc">Vue sur le toit du voisin</li>
-                                        <li class="room-desc">1 lavabo</li>
-                                        <li class="room-desc">2ème étage sans ascenseur</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
+                <p> Découvrez notre merveilleuse chambre d'hôtel, vue sur mur. Cette chambre, 
+                aux allures charmantes, contient tout l'essentiel pour passer des vacances horribles. 
+                <br>Un lit, une télévision, un cadre de décoration et le tour est joué. Et si une envie 
+                pressante se fait sentir : le lavabo est à portée de main !</p>
+            </div>
+        </div>
+        <section class="details-picture">
+            <div class="image-container">
+                <div class="room-img">
+                    <img class="room-with-a-sink" src="https://media-cdn.tripadvisor.com/media/photo-s/02/29/d9/9c/my-room-cold-old-and.jpg" alt="Une chambre avec un lavabo" >
+                 </div>
+                 <div>
+                   <ul>
+                     <h4 class="room-titre">Détails de la chambre</h4><br>
+                     <li class="room-desc">1 lit</li>
+                     <li class="room-desc">0 télé</li>
+                     <li class="room-desc">Armoire sans penderie</li>
+                     <li class="room-desc">Vue sur le toit du voisin</li>
+                     <li class="room-desc">1 lavabo</li>
+                     <li class="room-desc">2ème étage sans ascenseur</li>
+                   </ul>
+                 </div>
+               </div>
+             </section>
+           </section> 
+            </div>
+        </section>
 
         <div class="comments-container" id="commentaires">
             <h4>Commentaires</h4>
-        </div>
+            </div>
         <section>
             <div class="slide-container swiper">
                 <div class="slide-content">
@@ -258,15 +171,16 @@
                             <div class="card-content">
                                 <h2 class="name">Jean-Claude</h2>
                                 <p class="description">V'ai été un peu défu quand je fuis arrivé. Ve pensais ne pas avoir d'eau dans ma fhambre et en fait un lavabo était prévent... Ve ferai pluf attenfion la profhaine fois !</p>
-                                <button class="button">Like</button>
+                             <div id="1">
+                                <button class="button" onclick="incrementCounter('1')">💛</button>
+                                 <span id="number1">0</span>
+                            </div>
                             </div>
                         </div>
-
 
                         <div class="card swiper-slide">
                             <div class="image-content">
                                 <span class ="overlay-comments"></span>
-
 
                                 <div class="card-image">
                                     <img src="assets/profile-picture-titeuf.png" alt="" class="card-img">
@@ -275,10 +189,12 @@
                             <div class="card-content">
                                 <h2 class="name">Titeuf</h2>
                                 <p class="description">Cette chambre était parfaite pour des vacances catastrophiques ! Petit bémol : le lavabo qui était cassé... comment je nettoie ma mèche ? C'est po juste !</p>
-                                <button class="button">Like</button>
+                            <div id="2">
+                                <button class="button" onclick="incrementCounter('2')">💛</button>
+                                <span id="number2">0</span>
+                             </div>
                             </div>
                         </div>
-
 
                         <div class="card swiper-slide">
                             <div class="image-content">
@@ -290,7 +206,10 @@
                             <div class="card-content">
                                 <h2 class="name">Patrick</h2>
                                 <p class="description">J'ai trouvé cette chambre un peu trop confortable à mon goût. Cependant, le lavabo dans la salle de bain m'a ruiné les vacances.</p>
-                                <button class="button">Like</button>
+                            <div id="3">
+                                <button class="button" onclick="incrementCounter('3')">💛</button>
+                                <span id="number3">0</span>
+                             </div>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -303,7 +222,10 @@
                             <div class="card-content">
                                 <h2 class="name">Scooby-Doo</h2>
                                 <p class="description">Il y avait des croques Scooby partout ! C'était délicieux. Ah et pour la chambre ? Je sais plus, j'ai fait que manger...</p>
-                                <button class="button">Like</button>
+                            <div id="4">
+                                <button class="button" onclick="incrementCounter('4')">💛</button>
+                                 <span id="number4">0</span>
+                            </div>
                             </div>
                         </div>
 
@@ -317,7 +239,10 @@
                             <div class="card-content">
                                 <h2 class="name">Monsieur Crabs</h2>
                                 <p class="description">Si vous voulez une chambre qui coûte de l'argent : foncez ! Moi qui compte mon argent tous les jours, j'ai été heureux (ou presque) de le dépenser dans cette somptueuse chambre.</p>
-                                <button class="button">Like</button>
+                             <div id="5">
+                                 <button class="button" onclick="incrementCounter('5')">💛</button>
+                                <span id="number5">0</span>
+                            </div>
                             </div>
                         </div>
 
@@ -331,28 +256,27 @@
                             <div class="card-content">
                                 <h2 class="name">Bob l'éponge</h2>
                                 <p class="description">J'ai passé de très mauvaises vacances : la chambre n'était pas carré mais rectangulaire... des vacances ratées comme on aime !</p>
-                                <button class="button">Like</button>
+                            <div id="6">
+                                <button class="button" onclick="incrementCounter('6')">💛</button>
+                                <span id="number6">0</span>
+                            </div>
                             </div>
                         </div>
-
-            
-
-                          
 
                         <div class="card swiper-slide">
                             <div class="image-content">
                                 <span class ="overlay-comments"></span>
-
-
-
                                 <div class="card-image">
                                     <img src="assets/profile-picture-ariel.png" alt="" class="card-img">
                                 </div>
                             </div>
                             <div class="card-content">
                                 <h2 class="name">Ariel</h2>
-                                <p class="description">L'océan est à des milliers de kilomètres de cette chambre. Je m'y sentais comme un poisson dans l'eau !</p>                         
-                                <button class="button">Like</button>
+                                <p class="description">L'océan est à des milliers de kilomètres de cette chambre. Je m'y sentais comme un poisson dans l'eau !</p>
+                        <div id="7">
+                            <button class="button" onclick="incrementCounter('7')">💛</button>
+                            <span id="number7">0</span>
+                        </div>
                             </div>
                         </div>
                     </div>
@@ -367,18 +291,12 @@
     <!-- Swiper commentaire Axelle JS-->
     <script src="swiper-bundle.min.js"></script>
 
-
-     
-
                 <!-- Section Slavica -->
-
-
                 <footer class="foot">
-                    <section class="logo-footer">
-                        
+                    <section class="logo-footer">                      
                         <div class="Logo-text">
                             <img class="Logo-footer" src="https://cdn.discordapp.com/attachments/1176872517600804945/1181871479101595691/Logo_1_.png.png?ex=6582a296&is=65702d96&hm=6b29b1641193b23f169ceb34b37ff22c7078501816800eb8f1e4cb0ff758e470&" alt="">
-                            <p class="foot-description"> On s'en fiche de la destination, c'est le voyage qui compte ! <span>&#128540;</span> l'objectif de ce reseau social est de vous partager les pires destinations dans le monde qui pourraient rendre vos voyages incroyablement inoubliables. Sur notre site vous allez pouvoir trouver différentes destiantions (peu importe où vous allez finir <span>&#128740;</span> ) Vous allez découvrir l'expérience d'autres voyageurs, partagez vos propres souvenirs pour alimenter le site et donner envie à d'autres utilisateurs.</p>
+                            <p class="foot-description"> On s'en fiche de la destination, c'est le voyage qui compte ! <span>&#128540;</span> l'objectif de ce reseau social est de vous partager les pires destinations dans le monde qui pourraient rendre vos voyages incroyablement inoubliables. Sur notre site, vous allez pouvoir trouver différentes destinations. Peu importe où vous allez finir, <span>&#128740;</span> ) vous allez découvrir l'expérience d'autres voyageurs, partagez vos propres souvenirs pour alimenter le site et donner envie à d'autres utilisateurs.</p>
                         </div>
                         <div class="logos-social">
                             <li><a href="https://www.facebook.com/?locale=fr_FR"><svg class="logo-facebook" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
@@ -388,9 +306,11 @@
                                     </path>
                                 </svg></a></li>
 
+
                             <li><a href="https://twitter.com/?lang=fr"><svg class="logo-twiter" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
                                 <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
                                 </svg></a></li>
+
 
                             <li><a href="https://www.instagram.com/"><svg class="logo-insta" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
                                     height="100" viewBox="0 0 32 32">
@@ -401,25 +321,37 @@
                         </div>
                     </section>
 
+
                     <section class="foot-lien">
+
 
                         <section class="Continents">
                             <h1>Continents</h1>
 
+
                             <div><a href="#">Afrique</a></div>
+
 
                             <div><a href="#">Europe</a></div>
 
+
                             <div><a href="#">Asie</a></div>
+
 
                             <div><a href="#">Amérique Du Nord</a></div>
 
+
                             <div><a href="#">Amérique Du Sud</a></div>
-        
+
 
                             <div><a href="#">Océanie</a></div>
-    
+
+
+     
                         </section>
+
+
+
 
                         <section class="Article">
                             <h1>Articles</h1>
@@ -427,37 +359,57 @@
 
                             <div><a href="#">Nouvel Article</a></div>
 
+
                             <div><a href="#">Articles Populaires</a></div>
 
+
                             <div><a href="#">Les Plus Lus</a></div>
+
 
                             <div><a href="#">Astuces Et Conseils</a></div>
                         </section>
 
 
+
+
                         <section class="Contact">
                             <h1>Contact</h1>
 
+
                             <div><a href="#">Adresse</a></div>
+
 
                             <div><a href="#">Téléphone</a></div>
 
+
                             <div><a href="#">E-mail</a></div>
-                           <div><a href="/FAQ.html" target="_blank">FAQ</a></div> 
-              
-                           <div><a href="/reclamation.html" target="_blank">Reclamations</a></div>        
-        
-                        </section>
+
+                            <div><a href="/FAQ.html" target="_blank">FAQ</a></div> 
+                          
+                            <div><a href="/reclamation.html" target="_blank">Réclamations</a></div>  
+
                     </section>
+            
+      
+                    
+                        </section>
+            
+
+
+
+
 
                     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
                         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
+
+
                     <script src="leaflet-locatecontrol-gh-pages/dist/L.Control.Locate.min.js"></script>
+
+
 
                     <script src="./app.js"></script>
 
                 </footer>
         </body>
-
 </html>
